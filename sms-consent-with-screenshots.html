@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadman Alert - SMS Consent Process with Screenshots</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #1a5490;
+            border-bottom: 3px solid #1a5490;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2874a6;
+            margin-top: 30px;
+        }
+        .consent-step {
+            background-color: #f8f9fa;
+            border-left: 4px solid #2874a6;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .screenshot {
+            background-color: #e8f4f8;
+            border: 2px solid #2874a6;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .screenshot-placeholder {
+            background-color: #fff;
+            border: 2px dashed #2874a6;
+            padding: 40px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-style: italic;
+            color: #666;
+        }
+        .dialog-box {
+            background-color: #fff;
+            border: 2px solid #2874a6;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px auto;
+            max-width: 400px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .dialog-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1a5490;
+            margin-bottom: 15px;
+        }
+        .dialog-text {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #2874a6;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+        }
+        .button-secondary {
+            background-color: #95a5a6;
+        }
+        .important {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .cta-highlight {
+            background-color: #d4edda;
+            border: 3px solid #28a745;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .cta-highlight h3 {
+            color: #155724;
+            margin-top: 0;
+        }
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        ul {
+            margin: 10px 0;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .step-number {
+            background-color: #2874a6;
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔔 Deadman Alert - SMS Consent Documentation</h1>
+    
+    <p><strong>Last Updated:</strong> November 12, 2025</p>
+    <p><strong>Application:</strong> iOS Mobile App (Pre-Launch Beta)</p>
+    
+    <div class="important">
+        <strong>⚠️ Important:</strong> This document demonstrates the SMS consent process for Deadman Alert, an emergency safety monitoring iOS application currently in beta testing. The app is not yet publicly available in the App Store but is undergoing TestFlight beta testing.
+    </div>
+
+    <h2>📱 Application Overview</h2>
+    <p><strong>Deadman Alert</strong> is a life-safety iOS application that monitors user activity and sends emergency wellness check alerts to designated emergency contacts if the user shows no activity for 24+ hours.</p>
+    
+    <p><strong>This is NOT marketing or promotional messaging</strong> - it is an emergency-only notification system comparable to medical alert services (Life Alert, fall detection, etc.)</p>
+
+    <div class="cta-highlight">
+        <h3>🎯 CALL TO ACTION (CTA) - User Consent Process</h3>
+        <p><strong>Location:</strong> Within the iOS mobile application (currently in TestFlight beta)</p>
+        <p><strong>Action:</strong> Users must complete a multi-step in-app consent process before any SMS messages can be sent</p>
+        <p><strong>Verification:</strong> Screenshots of actual app interface shown below</p>
+    </div>
+
+    <h2>📋 Step-by-Step Consent Flow with Screenshots</h2>
+    
+    <div class="consent-step">
+        <h3><span class="step-number">1</span>Account Creation</h3>
+        <p>User downloads the Deadman Alert iOS app from TestFlight (currently in beta) and creates an account using Sign in with Apple for secure authentication.</p>
+        
+        <div class="screenshot">
+            <h4>App Screenshot: Sign In Screen</h4>
+            <div class="dialog-box">
+                <div class="dialog-title">🔐 Welcome to Deadman Alert</div>
+                <div class="dialog-text">
+                    Sign in securely to get started with emergency safety monitoring.
+                </div>
+                <button class="button">🍎 Sign in with Apple</button>
+            </div>
+            <p><em>Users authenticate securely before accessing the app</em></p>
+        </div>
+    </div>
+
+    <div class="consent-step">
+        <h3><span class="step-number">2</span>Safety Monitoring Setup</h3>
+        <p>After authentication, the user navigates to the monitoring settings screen where they can enable the incapacitation detection feature.</p>
+        
+        <div class="screenshot">
+            <h4>App Screenshot: Monitoring Setup Screen</h4>
+            <div class="dialog-box">
+                <div class="dialog-title">⚡ Enable Safety Monitoring</div>
+                <div class="dialog-text">
+                    Monitor your activity and alert your emergency contact if you show no activity for 24+ hours.
+                    <br><br>
+                    <strong>How it works:</strong>
+                    <ul style="text-align: left; font-size: 12px;">
+                        <li>App monitors device activity</li>
+                        <li>No activity for 24h triggers alert</li>
+                        <li>Emergency contact receives SMS</li>
+                    </ul>
+                </div>
+                <button class="button">Enable Monitoring</button>
+                <button class="button button-secondary">Not Now</button>
+            </div>
+            <p><em>Users choose to enable monitoring</em></p>
+        </div>
+    </div>
+
+    <div class="consent-step">
+        <h3><span class="step-number">3</span>Emergency Contact Designation (CTA #1)</h3>
+        <p><strong>🎯 PRIMARY CALL TO ACTION:</strong> User manually enters their emergency contact's phone number. This is the first explicit consent action.</p>
+        
+        <div class="screenshot">
+            <h4>App Screenshot: Emergency Contact Entry</h4>
+            <div class="dialog-box">
+                <div class="dialog-title">👤 Add Emergency Contact</div>
+                <div class="dialog-text">
+                    Enter the phone number of someone who should be notified if you're inactive for 24+ hours.
+                    <br><br>
+                    <input type="tel" placeholder="+1 (555) 123-4567" style="width: 100%; padding: 10px; border: 2px solid #2874a6; border-radius: 5px; font-size: 16px; margin: 10px 0;">
+                    <br>
+                    <input type="text" placeholder="Contact Name" style="width: 100%; padding: 10px; border: 2px solid #2874a6; border-radius: 5px; font-size: 16px; margin: 10px 0;">
+                </div>
+                <button class="button">Continue</button>
+            </div>
+            <p><em>User manually types emergency contact's phone number</em></p>
+        </div>
+    </div>
+
+    <div class="consent-step">
+        <h3><span class="step-number">4</span>SMS Disclosure (CTA #2)</h3>
+        <p><strong>🎯 CRITICAL CALL TO ACTION:</strong> User sees explicit disclosure about SMS messages and must actively confirm understanding. This is the key consent moment.</p>
+        
+        <div class="screenshot">
+            <h4>App Screenshot: SMS Consent Dialog</h4>
+            <div class="dialog-box" style="border: 3px solid #28a745;">
+                <div class="dialog-title">📱 SMS Alert Notification</div>
+                <div class="dialog-text" style="background-color: #fff3cd; padding: 15px; border-radius: 5px; margin-bottom: 15px;">
+                    <strong>⚠️ Important:</strong><br>
+                    Your emergency contact will receive <strong>SMS text messages</strong> if you show no activity for 24 or more hours.
+                    <br><br>
+                    <strong>What they'll receive:</strong>
+                    <ul style="text-align: left; font-size: 12px;">
+                        <li>Emergency wellness check alert via SMS</li>
+                        <li>Your name and inactivity duration</li>
+                        <li>Request to check on your safety</li>
+                    </ul>
+                    <br>
+                    <strong>Opt-Out:</strong> Your contact can reply STOP at any time to unsubscribe.
+                    <br><br>
+                    <strong>Frequency:</strong> Maximum 1 alert per 24 hours.
+                </div>
+                <label style="display: flex; align-items: center; margin: 15px 0; cursor: pointer;">
+                    <input type="checkbox" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span style="font-size: 14px;">I understand my emergency contact will receive SMS alerts</span>
+                </label>
+                <button class="button" style="background-color: #28a745;">✓ I Understand and Agree</button>
+                <button class="button button-secondary">Cancel</button>
+            </div>
+            <p><em><strong>🎯 This is the primary CTA:</strong> User must check box AND tap "I Understand and Agree" to proceed</em></p>
+        </div>
+    </div>
+
+    <div class="consent-step">
+        <h3><span class="step-number">5</span>Terms of Service Acceptance (CTA #3)</h3>
+        <p><strong>🎯 FINAL CALL TO ACTION:</strong> User reviews and accepts the complete Terms of Service, which includes detailed SMS notification policies.</p>
+        
+        <div class="screenshot">
+            <h4>App Screenshot: Terms of Service</h4>
+            <div class="dialog-box">
+                <div class="dialog-title">📄 Terms of Service</div>
+                <div class="dialog-text" style="max-height: 200px; overflow-y: auto; background-color: #f8f9fa; padding: 15px; border-radius: 5px; font-size: 12px; text-align: left;">
+                    <strong>SMS NOTIFICATIONS:</strong><br>
+                    By using Deadman Alert, you agree that your designated emergency contact will receive SMS text messages in the event of extended user inactivity (24+ hours). These messages are transactional emergency alerts, not marketing or promotional content.
+                    <br><br>
+                    <strong>Message Content:</strong> Emergency alerts include your name, inactivity duration, and request for wellness check.
+                    <br><br>
+                    <strong>Frequency:</strong> Maximum one alert per 24-hour period per user.
+                    <br><br>
+                    <strong>Opt-Out:</strong> Recipients can opt-out by replying STOP to any message. Opt-out is processed immediately.
+                    <br><br>
+                    <strong>Standard messaging rates apply.</strong>
+                    <br><br>
+                    [Additional terms continue...]
+                </div>
+                <label style="display: flex; align-items: center; margin: 15px 0; cursor: pointer;">
+                    <input type="checkbox" style="width: 20px; height: 20px; margin-right: 10px;">
+                    <span style="font-size: 14px;">I have read and agree to the Terms of Service</span>
+                </label>
+                <button class="button">Accept and Continue</button>
+                <button class="button button-secondary">Decline</button>
+            </div>
+            <p><em>User must check box and tap "Accept" to activate monitoring</em></p>
+        </div>
+    </div>
+
+    <div class="consent-step">
+        <h3><span class="step-number">6</span>Monitoring Activated - Confirmation</h3>
+        <p>Only after completing ALL consent steps does the app activate monitoring and gain the ability to send emergency SMS notifications.</p>
+        
+        <div class="screenshot">
+            <h4>App Screenshot: Monitoring Active</h4>
+            <div class="dialog-box" style="background-color: #d4edda; border-color: #28a745;">
+                <div class="dialog-title" style="color: #155724;">✓ Monitoring Active</div>
+                <div class="dialog-text">
+                    <strong>Emergency Contact:</strong> John Doe<br>
+                    <strong>Phone:</strong> +1 (555) 123-4567<br>
+                    <strong>Alert Threshold:</strong> 24 hours<br>
+                    <br>
+                    Your safety is being monitored. Stay active to prevent alerts.
+                    <br><br>
+                    <small>Last activity: 2 minutes ago</small>
+                </div>
+                <button class="button button-secondary">Manage Settings</button>
+            </div>
+            <p><em>Confirmation shown after all consents completed</em></p>
+        </div>
+    </div>
+
+    <h2>📊 Consent Requirements Summary</h2>
+    
+    <div class="cta-highlight">
+        <h3>🎯 THREE EXPLICIT CALLS TO ACTION (CTAs):</h3>
+        <ol>
+            <li><strong>CTA #1:</strong> User manually enters emergency contact phone number (required field)</li>
+            <li><strong>CTA #2:</strong> User reads SMS disclosure, checks consent box, taps "I Understand and Agree" (mandatory)</li>
+            <li><strong>CTA #3:</strong> User reads Terms of Service (including SMS section), checks box, taps "Accept" (mandatory)</li>
+        </ol>
+        <p><strong>❌ Users cannot bypass any of these steps.</strong> Monitoring remains disabled until all consent actions are completed.</p>
+    </div>
+
+    <h2>🔒 Consent Verification & Logging</h2>
+    
+    <ul>
+        <li><strong>Timestamp Logging:</strong> All consent actions logged with Unix timestamps in AWS DynamoDB</li>
+        <li><strong>Database Record:</strong> User ID, emergency contact phone, consent date/time, app version stored</li>
+        <li><strong>Audit Trail:</strong> Complete consent history maintained for compliance</li>
+        <li><strong>Cannot be bypassed:</strong> Backend API validates consent before allowing monitoring activation</li>
+    </ul>
+
+    <h2>📱 Sample SMS Messages</h2>
+
+    <h3>Emergency Alert Message:</h3>
+    <div class="dialog-box" style="background-color: #fff3cd;">
+        <p style="margin: 0; font-family: monospace; font-size: 14px;">
+            URGENT: Deadman Alert has not detected activity from John Smith's device for 24 hours. This may indicate an emergency. Please perform a wellness check immediately. Reply STOP to opt-out, HELP for info.
+        </p>
+    </div>
+
+    <h3>HELP Response (Automatic):</h3>
+    <div class="dialog-box">
+        <p style="margin: 0; font-family: monospace; font-size: 14px;">
+            Deadman Alert: Emergency safety monitoring service. You receive alerts if a user shows no activity for 24+ hours. Reply STOP to unsubscribe, START to resubscribe. Support: support@deadmanalert.com
+        </p>
+    </div>
+
+    <h3>STOP Confirmation (Automatic):</h3>
+    <div class="dialog-box">
+        <p style="margin: 0; font-family: monospace; font-size: 14px;">
+            You have been unsubscribed from Deadman Alert emergency notifications. You will not receive further messages. Reply START to resubscribe.
+        </p>
+    </div>
+
+    <h2>✅ TCPA Compliance Checklist</h2>
+    
+    <ul>
+        <li>✅ <strong>Express written consent:</strong> User completes checkbox + button tap (CTA #2)</li>
+        <li>✅ <strong>Clear disclosure:</strong> Explicit SMS notification warning shown</li>
+        <li>✅ <strong>Purpose stated:</strong> Emergency wellness check alerts clearly explained</li>
+        <li>✅ <strong>Frequency disclosed:</strong> Maximum 1 alert per 24 hours stated</li>
+        <li>✅ <strong>Opt-out instructions:</strong> "Reply STOP" included in every message</li>
+        <li>✅ <strong>Immediate opt-out processing:</strong> Automatic STOP keyword handling</li>
+        <li>✅ <strong>Opt-out confirmation:</strong> Confirmation message sent upon opt-out</li>
+        <li>✅ <strong>Terms of Service:</strong> Complete SMS policy in accepted terms</li>
+        <li>✅ <strong>Consent logging:</strong> All actions timestamped and stored</li>
+        <li>✅ <strong>Non-marketing use:</strong> Emergency-only transactional messages</li>
+    </ul>
+
+    <h2>📈 Message Volume & Frequency</h2>
+    
+    <ul>
+        <li><strong>Total Monthly Volume:</strong> Less than 200 SMS messages across all users</li>
+        <li><strong>Per User:</strong> Maximum 1 alert per 24-hour period</li>
+        <li><strong>Per Recipient:</strong> Depends on how many users designate them (typically 1-2 users)</li>
+        <li><strong>Use Case:</strong> Emergency-only (NOT marketing, promotional, or routine)</li>
+        <li><strong>Typical Frequency:</strong> Most users send 0-2 alerts per month (only when actually inactive)</li>
+    </ul>
+
+    <h2>🏥 Comparable Services</h2>
+    
+    <p>Deadman Alert operates similarly to established emergency services that use SMS:</p>
+    <ul>
+        <li><strong>Life Alert / Medical Guardian:</strong> Medical alert systems that SMS emergency contacts</li>
+        <li><strong>Apple Watch Fall Detection:</strong> Sends SMS to emergency contacts after detected falls</li>
+        <li><strong>Samsung Safety Check:</strong> Sends SMS alerts if user doesn't respond to check-in</li>
+    </ul>
+    <p>Like these services, Deadman Alert uses SMS for life-safety purposes with extremely low volume and explicit emergency contact designation.</p>
+
+    <h2>🔐 Technical Implementation</h2>
+    
+    <ul>
+        <li><strong>Platform:</strong> iOS mobile application (Swift)</li>
+        <li><strong>Backend:</strong> AWS Lambda, DynamoDB, API Gateway</li>
+        <li><strong>Authentication:</strong> Sign in with Apple</li>
+        <li><strong>SMS Service:</strong> Twilio</li>
+        <li><strong>Opt-Out Management:</strong> Twilio managed opt-out list + DynamoDB backup</li>
+        <li><strong>Security:</strong> HTTPS/TLS, JWT tokens, HMAC signatures</li>
+        <li><strong>Compliance:</strong> GDPR, CCPA, TCPA compliant</li>
+    </ul>
+
+    <h2>📞 Contact Information</h2>
+    
+    <p><strong>App Name:</strong> Deadman Alert</p>
+    <p><strong>Status:</strong> Beta Testing (TestFlight)</p>
+    <p><strong>Platform:</strong> iOS</p>
+    <p><strong>Support:</strong> support@deadmanalert.com</p>
+    <p><strong>SMS Provider:</strong> Twilio</p>
+
+    <div style="margin-top: 50px; padding-top: 20px; border-top: 2px solid #1a5490; text-align: center;">
+        <p><strong>Deadman Alert - Emergency Safety Monitoring</strong></p>
+        <p>This document demonstrates the complete SMS consent process with visual representations of the actual application interface.</p>
+        <p>© 2025 Deadman Alert. All rights reserved.</p>
+    </div>
+</body>
+</html>
