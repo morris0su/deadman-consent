@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadman Alert - SMS Consent Documentation</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #1a5490;
+            border-bottom: 3px solid #1a5490;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2874a6;
+            margin-top: 30px;
+        }
+        .consent-step {
+            background-color: #f8f9fa;
+            border-left: 4px solid #2874a6;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .important {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .sample-message {
+            background-color: #e8f4f8;
+            border: 1px solid #2874a6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            font-style: italic;
+        }
+        ul {
+            margin: 10px 0;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Deadman Alert - SMS Consent Documentation</h1>
+    
+    <p><strong>Last Updated:</strong> November 11, 2025</p>
+    
+    <div class="important">
+        <strong>Purpose:</strong> This document explains how Deadman Alert obtains user consent to send SMS emergency notifications to designated emergency contacts.
+    </div>
+
+    <h2>Overview</h2>
+    <p>Deadman Alert is a life-safety iOS application that monitors user activity and sends emergency wellness check alerts to designated emergency contacts if the user shows no activity for 24+ hours. This is NOT marketing or promotional messaging - it is an emergency-only notification system.</p>
+
+    <h2>SMS Consent Process</h2>
+    
+    <p>Users provide explicit, informed consent through a multi-step process within the Deadman Alert iOS application:</p>
+
+    <div class="consent-step">
+        <h3>Step 1: Account Creation</h3>
+        <p>User downloads the Deadman Alert iOS app from the App Store and creates an account using Sign in with Apple for secure authentication.</p>
+    </div>
+
+    <div class="consent-step">
+        <h3>Step 2: Enable Safety Monitoring</h3>
+        <p>User navigates to the safety monitoring settings within the app and taps "Enable Monitoring" to activate the incapacitation detection feature.</p>
+    </div>
+
+    <div class="consent-step">
+        <h3>Step 3: Designate Emergency Contact</h3>
+        <p>The app prompts the user to designate ONE emergency contact who will receive alerts. The user manually enters the emergency contact's phone number with format validation.</p>
+    </div>
+
+    <div class="consent-step">
+        <h3>Step 4: SMS Disclosure</h3>
+        <p>The app displays a prominent disclosure message:</p>
+        <div class="sample-message">
+            "Your designated emergency contact will receive SMS text messages if you show no activity for 24 or more hours. This is an emergency-only notification system. Your contact can opt out at any time by replying STOP to any message."
+        </div>
+    </div>
+
+    <div class="consent-step">
+        <h3>Step 5: Explicit Confirmation</h3>
+        <p>User must tap a button labeled <strong>"I Understand and Agree"</strong> to acknowledge the SMS disclosure and proceed. The user cannot enable monitoring without this explicit confirmation.</p>
+    </div>
+
+    <div class="consent-step">
+        <h3>Step 6: Terms of Service</h3>
+        <p>User reviews and accepts the complete Terms of Service, which includes detailed information about SMS emergency notifications, opt-out procedures, and privacy practices.</p>
+    </div>
+
+    <div class="consent-step">
+        <h3>Step 7: Monitoring Activation</h3>
+        <p>Only after completing ALL consent steps does the app begin monitoring and gain the ability to send emergency SMS notifications. All consent actions are logged with timestamps in our secure database for compliance purposes.</p>
+    </div>
+
+    <h2>Emergency Contact Consent</h2>
+    
+    <p>Emergency contacts receive SMS notifications based on <strong>implicit consent</strong> through their relationship with the user:</p>
+    
+    <ul>
+        <li>The user explicitly designates them as an emergency contact</li>
+        <li>They are informed by the user that they will receive emergency alerts</li>
+        <li>This model is similar to medical alert systems (Life Alert, fall detection services, etc.)</li>
+        <li>Recipients can opt out at any time by replying <code>STOP</code></li>
+    </ul>
+
+    <h2>Message Frequency & Volume</h2>
+    
+    <ul>
+        <li><strong>Frequency:</strong> Maximum 1 alert per user per 24-hour period</li>
+        <li><strong>Volume:</strong> Less than 200 SMS messages per month across all users</li>
+        <li><strong>Type:</strong> Emergency-only notifications (NOT marketing, promotional, or routine messages)</li>
+        <li><strong>Recipients:</strong> Single designated emergency contact per user</li>
+    </ul>
+
+    <h2>Sample Messages</h2>
+
+    <h3>Emergency Alert Message</h3>
+    <div class="sample-message">
+        URGENT: Deadman Alert has not detected activity from John Smith's device for 24 hours. This may indicate an emergency. Please perform a wellness check immediately. Reply STOP to opt-out, HELP for info.
+    </div>
+
+    <h3>HELP Response (Automatic)</h3>
+    <div class="sample-message">
+        Deadman Alert: Emergency safety monitoring service. You receive alerts if a user shows no activity for 24+ hours. Reply STOP to unsubscribe, START to resubscribe. Support: support@deadmanalert.com
+    </div>
+
+    <h3>STOP Confirmation (Automatic)</h3>
+    <div class="sample-message">
+        You have been unsubscribed from Deadman Alert emergency notifications. You will not receive further messages. Reply START to resubscribe.
+    </div>
+
+    <h3>START Confirmation (Automatic)</h3>
+    <div class="sample-message">
+        You have been resubscribed to Deadman Alert emergency notifications. Reply STOP to unsubscribe, HELP for information.
+    </div>
+
+    <h2>Opt-Out Procedures</h2>
+    
+    <p>We provide multiple opt-out mechanisms to ensure full TCPA compliance:</p>
+    
+    <ul>
+        <li><strong>SMS Keywords:</strong> Recipients can reply <code>STOP</code>, <code>STOPALL</code>, <code>UNSUBSCRIBE</code>, <code>CANCEL</code>, <code>END</code>, or <code>QUIT</code> to any message</li>
+        <li><strong>Processing Time:</strong> Opt-out requests are processed immediately (within 1 second)</li>
+        <li><strong>Confirmation:</strong> Automatic confirmation message sent upon opt-out</li>
+        <li><strong>Opt-In:</strong> Recipients can opt back in by replying <code>START</code>, <code>SUBSCRIBE</code>, or <code>UNSTOP</code></li>
+        <li><strong>System Enforcement:</strong> Our system checks the opt-out list before every message send (no messages sent to opted-out numbers)</li>
+    </ul>
+
+    <h2>TCPA Compliance</h2>
+    
+    <p>Deadman Alert is fully compliant with the Telephone Consumer Protection Act (TCPA):</p>
+    
+    <ul>
+        <li>✅ Explicit user consent obtained before any SMS sent</li>
+        <li>✅ Clear disclosure of SMS purpose and frequency</li>
+        <li>✅ Automatic STOP/START/HELP keyword processing</li>
+        <li>✅ Opt-out requests honored immediately</li>
+        <li>✅ Confirmation messages for all opt-out/opt-in actions</li>
+        <li>✅ Emergency-only messaging (not promotional)</li>
+        <li>✅ Extremely low volume (<200 messages/month)</li>
+        <li>✅ Single recipient per user (not bulk/broadcast)</li>
+        <li>✅ All consent actions logged with timestamps</li>
+    </ul>
+
+    <h2>Privacy & Data Protection</h2>
+    
+    <ul>
+        <li>All user data encrypted at rest and in transit</li>
+        <li>Phone numbers stored securely in AWS DynamoDB</li>
+        <li>No sharing of user data with third parties</li>
+        <li>Users can delete their account and data at any time</li>
+        <li>Consent records retained for compliance purposes</li>
+        <li>GDPR and CCPA compliant data practices</li>
+    </ul>
+
+    <h2>Technical Implementation</h2>
+    
+    <p><strong>Platform:</strong> iOS mobile application (Swift)</p>
+    <p><strong>Backend:</strong> AWS Lambda, DynamoDB, API Gateway</p>
+    <p><strong>SMS Service:</strong> Twilio</p>
+    <p><strong>Opt-Out Management:</strong> Twilio managed opt-out list with automatic keyword processing</p>
+    <p><strong>Security:</strong> HTTPS/TLS encryption, JWT authentication, HMAC request signatures</p>
+
+    <h2>Use Case Justification</h2>
+    
+    <p>Deadman Alert serves a critical public interest by providing life-safety monitoring for:</p>
+    
+    <ul>
+        <li>Elderly individuals living alone</li>
+        <li>People with medical conditions at risk of sudden incapacitation</li>
+        <li>Remote workers in potentially hazardous environments</li>
+        <li>Anyone concerned about being unable to call for help in an emergency</li>
+    </ul>
+    
+    <p>The service is comparable to established emergency alert systems such as Life Alert, medical alert systems, fall detection services, and other life-safety monitoring solutions that use SMS for emergency notifications.</p>
+
+    <h2>Contact Information</h2>
+    
+    <p><strong>App Name:</strong> Deadman Alert</p>
+    <p><strong>Support Email:</strong> support@deadmanalert.com</p>
+    <p><strong>SMS Service Provider:</strong> Twilio</p>
+    <p><strong>Toll-Free Number:</strong> [Your Number Here]</p>
+
+    <div class="footer">
+        <p><strong>Deadman Alert - Emergency Safety Monitoring</strong></p>
+        <p>This document serves as proof of consent collection for SMS messaging in compliance with carrier requirements and the Telephone Consumer Protection Act (TCPA).</p>
+        <p>© 2025 Deadman Alert. All rights reserved.</p>
+    </div>
+</body>
+</html>
