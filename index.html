@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadman Alert - Emergency Safety Monitoring</title>
+    <meta name="description" content="Deadman Alert is an iOS emergency safety monitoring app that sends wellness check alerts to your emergency contacts if you're inactive for 24+ hours.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        
+        nav a:hover {
+            opacity: 0.8;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #1e3c72;
+            padding: 15px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            background: #f8f9fa;
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .feature h3 {
+            margin-bottom: 15px;
+            color: #1e3c72;
+        }
+        
+        section {
+            padding: 60px 20px;
+        }
+        
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #1e3c72;
+        }
+        
+        .how-it-works {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .step {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            align-items: start;
+        }
+        
+        .step-number {
+            background: #1e3c72;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .step-content h3 {
+            margin-bottom: 10px;
+            color: #1e3c72;
+        }
+        
+        footer {
+            background: #1e3c72;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .coming-soon {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🔔 Deadman Alert</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="sms-consent.html">SMS Consent</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Emergency Safety Monitoring for Peace of Mind</h1>
+        <p>Deadman Alert monitors your activity and sends wellness check alerts to your emergency contacts if you're inactive for 24+ hours.</p>
+        <div class="coming-soon">📱 Coming Soon to iOS App Store - Currently in Beta Testing</div>
+        <a href="#how-it-works" class="cta-button">Learn More</a>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Why Choose Deadman Alert?</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Automatic Monitoring</h3>
+                    <p>Our app quietly monitors your device activity. If you don't interact with your phone for 24+ hours, an alert is automatically sent.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📱</div>
+                    <h3>SMS Alerts</h3>
+                    <p>Your designated emergency contact receives an immediate SMS text message asking them to perform a wellness check.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy Focused</h3>
+                    <p>We only track activity timestamps - no location tracking, no personal data collection. Your privacy is paramount.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Simple Setup</h3>
+                    <p>Download the app, sign in with Apple, designate an emergency contact, and you're protected. Takes less than 2 minutes.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">✅</div>
+                    <h3>TCPA Compliant</h3>
+                    <p>Full opt-out capabilities via STOP keyword. Your emergency contact can unsubscribe at any time with a simple text reply.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💰</div>
+                    <h3>Affordable</h3>
+                    <p>Life-safety monitoring shouldn't break the bank. Simple, transparent pricing for everyone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="how-it-works">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Download & Sign In</h3>
+                        <p>Download Deadman Alert from the iOS App Store (coming soon - currently in TestFlight beta). Sign in securely with Apple.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Designate Emergency Contact</h3>
+                        <p>Choose one trusted person to receive alerts. Enter their phone number and confirm you understand they'll receive SMS notifications.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Enable Monitoring</h3>
+                        <p>Activate monitoring with a single tap. The app begins tracking your device activity in the background.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Stay Active</h3>
+                        <p>Use your phone normally. Every time you interact with your device, your "last seen" timestamp updates automatically.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Automatic Alerts</h3>
+                        <p>If 24 hours pass without activity, your emergency contact receives an SMS asking them to check on you. That's it!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Deadman Alert</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 18px; margin-bottom: 20px;">
+                    Deadman Alert was created to provide peace of mind for people living alone, elderly individuals, remote workers, and anyone concerned about being unable to call for help in an emergency.
+                </p>
+                <p style="font-size: 18px; margin-bottom: 20px;">
+                    Similar to medical alert systems like Life Alert, but leveraging the smartphone you already carry, Deadman Alert provides affordable, automatic emergency monitoring without expensive hardware or monthly monitoring fees.
+                </p>
+                <p style="font-size: 18px; margin-bottom: 20px;">
+                    We believe everyone deserves safety and peace of mind, which is why we've built a simple, privacy-focused solution that just works.
+                </p>
+                <p style="font-size: 18px;">
+                    <strong>Status:</strong> Currently in beta testing via TestFlight. Public iOS App Store launch coming soon!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="use-cases">
+        <div class="container">
+            <h2>Who Is This For?</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">👴</div>
+                    <h3>Elderly Individuals</h3>
+                    <p>Living alone? Deadman Alert ensures someone checks on you if you're unable to call for help.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Solo Dwellers</h3>
+                    <p>Living by yourself? Get peace of mind knowing someone will be notified if something goes wrong.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💼</div>
+                    <h3>Remote Workers</h3>
+                    <p>Working from home alone? Stay protected in case of a medical emergency or accident.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🏔️</div>
+                    <h3>Outdoor Enthusiasts</h3>
+                    <p>Hiking, camping, or exploring alone? Ensure someone knows if you don't return as expected.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚕️</div>
+                    <h3>Medical Conditions</h3>
+                    <p>At risk of sudden incapacitation? Get automatic alerts sent if you can't call for help yourself.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">✈️</div>
+                    <h3>Frequent Travelers</h3>
+                    <p>Traveling solo? Give loved ones peace of mind with automatic check-in monitoring.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 18px; margin-bottom: 30px;">
+                    Have questions? Want to join our beta testing program? We'd love to hear from you!
+                </p>
+                <p style="font-size: 18px; margin-bottom: 10px;">
+                    <strong>Email:</strong> <a href="mailto:support@safemonitor.app" style="color: #1e3c72;">support@safemonitor.app</a>
+                </p>
+                <p style="font-size: 18px; margin-bottom: 10px;">
+                    <strong>Platform:</strong> iOS (App Store - Coming Soon)
+                </p>
+                <p style="font-size: 18px; margin-bottom: 30px;">
+                    <strong>Current Status:</strong> Beta Testing via TestFlight
+                </p>
+                <div style="background: #e8f4f8; padding: 20px; border-radius: 10px; border: 2px solid #2a5298;">
+                    <p style="margin: 0; font-weight: bold;">Interested in beta testing?</p>
+                    <p style="margin: 10px 0 0 0;">Email us at <a href="mailto:support@safemonitor.app" style="color: #1e3c72;">support@safemonitor.app</a> to request TestFlight access!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Deadman Alert. All rights reserved.</p>
+            <p style="margin: 10px 0;">Emergency Safety Monitoring for Peace of Mind</p>
+            <div class="footer-links">
+                <a href="sms-consent.html">SMS Consent Documentation</a>
+                <a href="mailto:support@deadmanalert.com">Support</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p style="margin-top: 20px; font-size: 14px; opacity: 0.8;">
+                Deadman Alert is not a medical device and should not replace professional medical alert systems or emergency services. Always call 911 in case of emergency.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
